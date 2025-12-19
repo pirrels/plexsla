@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plexsla</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #1a1a1a;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            padding: 20px;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 50px;
+        }
+        
+        .logo-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #e5a00d 0%, #cc7b19 100%);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+        }
+        
+        .logo h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+        
+        .logo h1 span {
+            color: #e5a00d;
+        }
+        
+        .launch-btn {
+            display: block;
+            padding: 25px 80px;
+            background: linear-gradient(135deg, #e5a00d 0%, #cc7b19 100%);
+            border: none;
+            border-radius: 12px;
+            color: #000;
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-decoration: none;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .launch-btn:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 40px rgba(229, 160, 13, 0.3);
+        }
+        
+        .launch-btn:active {
+            transform: scale(0.98);
+        }
+        
+        .hint {
+            margin-top: 30px;
+            color: #666;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+        
+        .hint strong {
+            color: #888;
+        }
+        
+        .alt-link {
+            margin-top: 40px;
+            padding-top: 40px;
+            border-top: 1px solid #333;
+            text-align: center;
+        }
+        
+        .alt-link a {
+            color: #666;
+            text-decoration: none;
+            font-size: 0.85rem;
+        }
+        
+        .alt-link a:hover {
+            color: #e5a00d;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <div class="logo-icon">▶</div>
+        <h1>Plex<span>sla</span></h1>
+    </div>
+    
+    <a href="https://www.youtube.com/redirect?q=https://app.plex.tv/desktop" class="launch-btn">
+        Launch Plex Fullscreen
+    </a>
+    
+    <p class="hint">
+        Click <strong>"Go to Site"</strong> when YouTube asks
+    </p>
+    
+    <div class="alt-link">
+        <a href="https://app.plex.tv/desktop">Open Plex without fullscreen →</a>
+    </div>
+</body>
+</html>
